@@ -1,6 +1,9 @@
 @import url("../fonts/HelveticaNeueCyr/font-Helvetica.css");
 @import "wide-slider.scss";
 @import "calendar-slider.scss";
+body {
+	margin: 0;
+}
 .ibg{
 	background-position: center;
 	background-repeat: no-repeat;
@@ -30,6 +33,7 @@
 	width: 1320px;
 	height: auto;
 	margin: auto;
+	padding: 0 15px;
 }
 @media screen and (max-width: 1400px) {
 	.container{
@@ -589,4 +593,37 @@
 	}
 	&__col-text {
 	}
+}
+
+
+.footer {
+	&__city-bg {
+		img{
+			width: 100%;
+			margin-bottom: -6px;
+		}
+	}
+	&__wide-bg {
+		min-height: 200px;
+		background-color: #0C4DA2;
+	}
+	&__main {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		align-items: stretch;
+	}
+	&__title {
+		text-align: center;
+		margin: 15px 0;
+	}
+	&__cols {
+		justify-content: space-around;
+	}
+	&__col {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+	&__text-wrap {}
 }
