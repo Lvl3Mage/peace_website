@@ -567,6 +567,24 @@
 	width: 75%;
 }
 
+.decor-text__blue-title {
+	font-family: HelveticaNeueCyr;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 36px;
+	line-height: 36px;
+	text-transform: uppercase;
+	color: #0C4DA2;
+}
+.decor-text__cyan-title-small {
+	font-family: HelveticaNeueCyr;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 24px;
+	line-height: 24px;
+	text-transform: uppercase;
+	color: #00B0AD;
+}
 .decor-text__main-title {
 	text-transform: uppercase;
 	font-family: HelveticaNeueCyr;
@@ -902,8 +920,79 @@
 	        flex-grow: 1;
 }
 .components__col {
+	margin: 0 20px;
 	-webkit-box-flex: 1;
 	    -ms-flex-positive: 1;
 	        flex-grow: 1;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
+}
+.components__col--wide {
+	-ms-flex-preferred-size: 35%;
+	    flex-basis: 35%;
+}
+.components__col-image-wrap {
+	padding-right: 25%;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	-webkit-box-flex: 0;
+	    -ms-flex: 0 0 65%;
+	        flex: 0 0 65%;
+}
+.components__col-image {
+	width: 60%;
+	height: 60%;
+}
+.components__col-text-container {
+	-webkit-box-flex: 0;
+	    -ms-flex-positive: 0;
+	        flex-grow: 0;
+}
+.components__col-title-wrap {
+	width: 100%;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+}
+.components__col-title {
+	position: relative;
+}
+.components__col-text {
+	width: 100%;
+}
+.components__col-num {
+	margin-right: 20px;
+	height: 100%;
+	width: auto;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+}
+.components__col-text {
+	position: absolute;
+}
+.components__col-text--bottom {
+	bottom: -40%;
+}
+.components__col-text--top {
+	top: -35%;
 }
 /*# sourceMappingURL=style.css.map */
