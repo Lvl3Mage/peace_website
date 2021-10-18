@@ -312,6 +312,24 @@ body {
 	}
 }
 .decor-text {
+	&__blue-title{
+		font-family: HelveticaNeueCyr;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 36px;
+		line-height: 36px;
+		text-transform: uppercase;
+		color: #0C4DA2;
+	}
+	&__cyan-title-small{
+		font-family: HelveticaNeueCyr;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 24px;
+		line-height: 24px;
+		text-transform: uppercase;
+		color: #00B0AD;
+	}
 	&__main-title{
 		text-transform: uppercase;
 		font-family: HelveticaNeueCyr;
@@ -320,6 +338,8 @@ body {
 		font-size: 42px;
 		line-height: 42px;
 		color: #00B0AD;
+
+		
 	}
 	&__date {
 		font-family: HelveticaNeueCyr;
@@ -583,15 +603,54 @@ body {
 		flex-grow:1;
 	}
 	&__col {
+		margin: 0 20px;
 		flex-grow: 1;
+		display: flex;
+		flex-direction: column;
+		&--wide{
+			flex-basis: 35%;
+		}
 	}
-	&__col-icon {
+	&__col-image-wrap {
+		padding-right: 25%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex: 0 0 65%;
+	}
+	&__col-image{
+		width: 60%;
+		height: 60%;
 	}
 	&__col-text-container {
+		flex-grow: 0;
 	}
-	&__col-title {
+	&__col-title-wrap {
+		width: 100%;
+		display: flex;
+	}
+	&__col-title{
+		position: relative;
 	}
 	&__col-text {
+		width: 100%;
+	}
+	&__col-num{
+		margin-right: 20px;
+		height: 100%;
+		width: auto;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+	&__col-text{
+		position: absolute;
+		&--bottom{
+			bottom:-40%;
+		}
+		&--top{
+			top: -35%;
+		}
 	}
 }
 
