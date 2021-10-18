@@ -1,0 +1,135 @@
+/* Слайдер */
+.wide-slider {
+	min-width: 0;
+	display: flex;
+	flex-grow: 1;
+}
+.wide-slider .slick-slider{
+
+}
+/* Слайдер запущен */
+.wide-slider .slick-slider.slick-initialized{
+
+}
+/* Слайдер с точками */
+.wide-slider .slick-slider.slick-dotted{
+
+}
+/* Ограничивающая оболочка */
+.wide-slider .slick-list {
+	height: 100%;
+}
+/* Лента слайдов */
+.wide-slider .slick-track{
+	height: 100%;
+}
+/* Слайд */
+.wide-slider .slick-slide{
+	display: flex !important;
+}
+/* Слайд активный (показывается) */
+.wide-slider .slick-slide.slick-active{
+
+}
+/* Слайд основной */
+.wide-slider .slick-slide.slick-current{
+
+}
+/* Слайд по центру */
+.wide-slider .slick-slide.slick-center{
+
+}
+/* Клонированный слайд */
+.wide-slider .slick-slide.slick-cloned{
+
+}
+/* Стрелка */
+.wide-slider .slick-arrow{
+
+}
+/* Стрелка влево */
+.wide-slider .slick-arrow.slick-prev{
+
+}
+/* Стрелка вправо */
+.wide-slider .slick-arrow.slick-next{
+
+}
+/* Стрелка не активная */
+.wide-slider .slick-arrow.slick-disabled{
+
+}
+/* Точки (булиты) */
+.wide-slider .slick-dots{
+	position: relative;
+	top: -25px;
+	margin-top: 0;
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+
+}
+.events .wide-slider .slick-dots{
+	position: relative;
+	top: -25px;
+}
+
+.wide-slider .slick-dots li{
+	list-style: none;
+}
+/* Активная точка */
+.wide-slider .slick-dots li.slick-active{
+}
+/* Элемент точки */
+.wide-slider .slick-dots li button{
+	position: relative;
+	padding: 0;
+	margin: 0 15px;
+	font-size: 0;
+	width: 0px;
+	height: 11px;
+	border: none;
+	background: #0C4DA2;
+	transition: all 0.2s ease;
+
+}
+.wide-slider .slick-dots li button::before{
+	content:'';
+	position: absolute;
+	height: 11px;
+	width: 11px;
+	top:50%;
+	margin-top: -5.5px;
+	left: -5.5px;
+	background: #0C4DA2;
+	border-radius:50%;
+	transition: all 0.2s ease;
+	
+}
+.wide-slider .slick-dots li button::after{
+	content:'';
+	position: absolute;
+	height: 11px;
+	width: 11px;
+	top:50%;
+	margin-top: -5.5px;
+	right: -5.5px;
+	background: #0C4DA2;
+	border-radius:50%;
+	transition: all 0.2s ease;
+	
+}
+.wide-slider .slick-dots li.slick-active button{
+	background: #00B0AD;
+	width: 46px;
+	transition: all 0.2s ease;
+}
+.wide-slider .slick-dots li.slick-active button::before{
+	background: #00B0AD;
+	transition: all 0.2s ease;
+}
+.wide-slider .slick-dots li.slick-active button::after{
+	background: #00B0AD;
+	transition: all 0.2s ease;
+	
+}
