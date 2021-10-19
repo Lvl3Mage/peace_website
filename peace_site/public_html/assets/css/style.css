@@ -532,6 +532,11 @@ body {
 	    -ms-flex: 0 0 30%;
 	        flex: 0 0 30%;
 }
+.twocol__col--1-2 {
+	-webkit-box-flex: 0;
+	    -ms-flex: 0 0 50%;
+	        flex: 0 0 50%;
+}
 
 .block1 {
 	height: 500px;
@@ -1262,6 +1267,63 @@ body {
 	.training-slide__connect-button {
 		margin-left: 48px;
 	}
+}
+
+.arrows__cols {
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+}
+.arrows__left-cols {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: start;
+	    -ms-flex-pack: start;
+	        justify-content: start;
+}
+.arrows__left-col-1 {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: start;
+	    -ms-flex-pack: start;
+	        justify-content: start;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	margin-right: 20%;
+}
+.arrows__left-col-1 img {
+	width: 80%;
+}
+.arrows__left-col-2 {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: start;
+	    -ms-flex-pack: start;
+	        justify-content: start;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+}
+.arrows__left-col-2 img {
+	width: 80%;
+}
+.arrows__right-col {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: end;
+	    -ms-flex-pack: end;
+	        justify-content: end;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+}
+.arrows__right-col img {
+	width: 51%;
 }
 
 .footer__city-bg img {
