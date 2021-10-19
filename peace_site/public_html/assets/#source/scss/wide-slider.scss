@@ -62,16 +62,20 @@
 /* Точки (булиты) */
 .wide-slider .slick-dots{
 	position: relative;
-	top: -25px;
-	margin-top: 0;
 	display: flex;
 	align-items: center;
-	justify-content: flex-end;
+	padding: 0;
 
 }
-.events .wide-slider .slick-dots{
-	position: relative;
+.slick-dots-right .slick-dots{
+	justify-content: flex-end;
+	margin-top: 0;
 	top: -25px;
+}
+.slick-dots-center .slick-dots{
+	justify-content: center;
+	margin-top: 50px;
+	top: 0;
 }
 
 .wide-slider .slick-dots li{
