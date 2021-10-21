@@ -71,6 +71,12 @@
 	justify-content: flex-end;
 	margin-top: 0;
 	top: -25px;
+	@media screen and (max-width: 768px) { // wrap
+		top: -10px;
+	}
+	@media screen and (max-width: 576px) { // wrap
+		top: 0;
+	}
 }
 .slick-dots-center .slick-dots{
 	justify-content: center;
