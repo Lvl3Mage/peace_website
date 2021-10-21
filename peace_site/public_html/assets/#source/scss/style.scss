@@ -1,6 +1,7 @@
 @import url("../fonts/HelveticaNeueCyr/font-Helvetica.css");
 @import "wide-slider.scss";
 @import "calendar-slider.scss";
+@import "mixins.scss";
 body {
 	margin: 0;
 }
@@ -33,6 +34,7 @@ body {
 	height: 100%;
 }
 .container{
+	box-sizing: border-box;
 	width: 1320px;
 	height: auto;
 	margin: auto;
@@ -55,11 +57,6 @@ body {
 }
 @media screen and (max-width: 768px) {
 	.container{
-		width: 540px;
-	}
-}
-@media screen and (max-width: 576px) {
-	.container{
 		width: 100%;
 	}
 }
@@ -79,9 +76,17 @@ body {
 			width: 100%;
 		}
 		&__images {
+			height: 137px;
 			display: flex;
 			justify-content: space-between;
 			width: 100%;
+			margin-bottom: 15px;
+			@media screen and (max-width: 768px) {
+				height: 94px;
+			}
+			@media screen and (max-width: 576px) {
+				height: 50px;
+			}
 			&__image-wrap{
 				flex: 0 0 15%;
 				display: flex;
@@ -123,6 +128,9 @@ body {
 }
 .top-bar-menu {
 	&__buttons {
+		@media screen and (max-width: 576px) {
+			display: none;
+		}
 	}
 	&__text-menu {
 		display: flex;
@@ -265,6 +273,9 @@ body {
 	border-color: #00B0AD;
 	color: #034EA2;
 	margin: 2px;
+	@media screen and (max-width: 768px) {
+		width: 120px;
+	}
 	&__container{
 		display: inline-block;
 	}
@@ -351,17 +362,18 @@ body {
 		font-family: HelveticaNeueCyr;
 		font-style: normal;
 		font-weight: bold;
-		font-size: 36px;
-		line-height: 36px;
+		@include fSize(1500, 910, 36, 18);
+		line-height: 1em;
 		text-transform: uppercase;
 		color: #0C4DA2;
+
 	}
 	&__cyan-title-small{
 		font-family: HelveticaNeueCyr;
 		font-style: normal;
 		font-weight: normal;
-		font-size: 24px;
-		line-height: 24px;
+		@include fSize(1440, 910, 24, 14);
+		line-height: 1em;
 		text-transform: uppercase;
 		color: #00B0AD;
 	}
@@ -370,8 +382,8 @@ body {
 		font-family: HelveticaNeueCyr;
 		font-style: normal;
 		font-weight: bold;
-		font-size: 42px;
-		line-height: 42px;
+		@include fSize(1440, 576, 42, 24);
+		line-height: 1em;
 		color: #00B0AD;
 		@media screen and (max-width: 576px) {
 			font-size: 24px;
@@ -637,7 +649,7 @@ body {
 	margin-top: 120px;
 	height: 500px;
 }
-.components {
+/*.components {
 	margin-top: 135px;
 	height: 460px;
 	&__wrap {
@@ -648,6 +660,8 @@ body {
 	&__main-title {
 	}
 	&__col-wrap {
+		display: flex;
+
 		flex-grow:1;
 	}
 	&__col {
@@ -700,7 +714,104 @@ body {
 			top: -35%;
 		}
 	}
+}*/
+.components {
+	&__container {
+		margin-top: 135px;
+		height: 460px;
+		display: flex;
+		flex-direction: column;
+
+		@media screen and (max-width: 1200px) {
+			height: 350px;
+		}
+		@media screen and (max-width: 992px) {
+			height: 250px;
+		}
+		@media screen and (max-width: 768px) {
+			height: 650px;
+		}
+
+	}
+	&__title {
+	}
+	&__wrap {
+		flex-grow: 1;
+		display: flex;
+		justify-content: space-between;
+		@media screen and (max-width: 768px) {
+			margin-top: 20px;
+			flex-wrap: wrap;
+			justify-content: center;
+		}
+		
+	}
+	&__element-wrap{
+		flex: 0 0 30%;
+		display: flex;
+		justify-content: center;
+		@media screen and (max-width: 768px) {
+			flex: 0 0 100%;
+			margin-bottom: 40px;
+		}
+	}
+	&__element {
+		@media screen and (max-width: 768px) {
+			flex: 0 0 30%;
+		}
+	}
 }
+.comp-element {
+	display: flex;
+	flex-direction: column;
+	&__icon-wrap {
+		flex-grow: 1;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+	&__icon {
+		margin-right: 40px;
+		margin-bottom: 20px;
+		flex: 0 0 60%;
+		height: 100%;
+		@media screen and (max-width: 768px) {
+			flex: 0 0 50%;
+			margin-right: 0;
+		}
+	}
+	&__content-wrap {
+		display: flex;
+	}
+	&__content {
+	}
+	&__number-wrap {
+		flex: 1 0 20%;
+		margin-right: 3%;
+	}
+	&__number {
+		height: 100%;
+	}
+	&__title-wrap {
+		width: fit-content;
+		position: relative;
+	}
+	&__title {
+		width: 10em;
+	}
+	&__subtitle {
+		position: absolute;
+		margin: 7px 0;
+		left: -4px;
+		&--top{
+			bottom: 100%;
+		}
+		&--bottom{
+			top: 100%;
+		}
+	}
+}
+
 .training {
 	&__container {
 		margin-bottom: 200px;
