@@ -294,6 +294,9 @@ body {
 		&--1-3 {
 			flex: 0 0 30%;
 		}
+		&--1-2 {
+			flex: 0 0 50%;
+		}
 	}
 }
 .block1{
@@ -975,6 +978,42 @@ body {
 
 //START G
 
+.arrows {
+	&__cols {
+		align-items: center;
+	}
+	&__left {}
+	&__left-cols {
+		display: flex;
+		justify-content: start;
+	}
+	&__left-col-1 {
+		display: flex;
+		justify-content: start;
+		align-items: center;
+		margin-right: 20%;
+		img{
+			width: 80%;
+		}
+	}
+	&__left-col-2 {
+		display: flex;
+		justify-content: start;
+		align-items: center;
+		img{
+			width: 80%;
+		}
+	}
+	&__right {}
+	&__right-col {
+		display: flex;
+		justify-content: end;
+		align-items: center;
+		img{
+			width: 51%;
+		}
+	}
+}
 
 
 
