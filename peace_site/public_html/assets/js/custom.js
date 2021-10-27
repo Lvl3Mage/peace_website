@@ -62,6 +62,34 @@ $(document).ready( function () {
 			}
 		]
 	});
+	$(".long-slider").slick({
+		arrows:true,
+		dots:false,
+		infinite: false,
+		slidesToShow: 4,
+		slidesToScroll: 1,
+		responsive: [
+			{
+				breakpoint: 1200,
+				settings: {
+					slidesToShow: 3,
+					slidesToScroll: 1,
+				}
+			},{
+				breakpoint: 992,
+				settings: {
+					slidesToShow: 2,
+					slidesToScroll: 1
+				}
+			},{
+				breakpoint: 576,
+				settings: {
+					slidesToShow: 1,
+					slidesToScroll: 1
+				}
+			}
+		]
+	});
 	ReverseVertical();
 	/*$(".wide-slider").slick({
 		arrows:false,

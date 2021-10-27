@@ -1,0 +1,172 @@
+@import "mixins.scss";
+.decor-text {
+	&__cyan-title-tiny{
+		font-family: HelveticaNeueCyr;
+		font-style: normal;
+		font-weight: bold;
+		@include fSize(1440, 910, 18, 13);
+		line-height: 1;
+		text-transform: uppercase;
+		color: #00B0AD;
+	}
+	&__text-white{
+		font-family: HelveticaNeueCyr;
+		font-style: normal;
+		font-weight: 550;
+		font-size: 16px;
+		line-height: 16px;
+		color: #FFF;
+		
+	}
+	&__blue-title-small{
+		font-family: HelveticaNeueCyr;
+		font-style: normal;
+		font-weight: 550;
+		font-size: 24px;
+		line-height: 24px;
+		color: #0C4DA2;
+
+		@media screen and (max-width: 576px) {
+			font-size: 18px;
+			line-height: 18px;
+		}
+	}
+
+	&__blue-title-med{
+		font-family: HelveticaNeueCyr;
+		font-style: normal;
+		font-weight: 550;
+		font-size: 30px;
+		line-height: 30px;
+		color: #0C4DA2;
+		text-transform: uppercase;
+	}
+	&__blue-title{
+		font-family: HelveticaNeueCyr;
+		font-style: normal;
+		font-weight: bold;
+		@include fSize(1500, 910, 36, 18);
+		line-height: 1em;
+		text-transform: uppercase;
+		color: #0C4DA2;
+
+	}
+	&__blue-title-big{
+		font-family: HelveticaNeueCyr;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 24px;
+		line-height: 24px;
+		color: #0C4DA2;
+		text-transform: uppercase;
+	}
+	&__cyan-title-small{
+		font-family: HelveticaNeueCyr;
+		font-style: normal;
+		font-weight: normal;
+		@include fSize(1440, 910, 24, 14);
+		line-height: 1em;
+		text-transform: uppercase;
+		color: #00B0AD;
+	}
+	&__main-title{
+		text-transform: uppercase;
+		font-family: HelveticaNeueCyr;
+		font-style: normal;
+		font-weight: bold;
+		@include fSize(1440, 576, 42, 24);
+		line-height: 1em;
+		color: #00B0AD;
+		@media screen and (max-width: 576px) {
+			font-size: 24px;
+			line-height: 24px;
+		}
+
+		
+	}
+	&__main-title-small{
+		text-transform: uppercase;
+		font-family: HelveticaNeueCyr;
+		font-style: normal;
+		font-weight: bold;
+		@include fSize(1440, 576, 24, 14);
+		line-height: 1em;
+		color: #00B0AD;
+		@media screen and (max-width: 576px) {
+			font-size: 24px;
+			line-height: 24px;
+		}
+
+		
+	}
+	&__date {
+		font-family: HelveticaNeueCyr;
+		font-style: normal;
+		font-weight: 550;
+		font-size: 16px;
+		line-height: 16px;
+		color: #0C4DA2;
+		&--padding{
+			padding-bottom: 7px;
+		}
+	}
+	&__title {
+		text-transform: uppercase;
+		font-family: HelveticaNeueCyr;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 18px;
+		line-height: 18px;
+		color: #FC9B65;
+		&--padding{
+			padding-bottom: 2px;
+		}
+	}
+	&__text {
+		font-family: HelveticaNeueCyr;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 16px;
+		line-height: 16px;
+		color: #0C4DA2;
+		&--padding{
+			padding-bottom: 18px;
+		}
+	}
+	&__text-med{
+		font-family: HelveticaNeueCyr;
+		font-style: normal;
+		font-weight: normal;
+		@include fSize(1440, 768, 18, 14);
+		line-height: 1em;
+		color: #0C4DA2;
+	}
+	&__text-blue-big{
+		font-family: HelveticaNeueCyr;
+		font-style: normal;
+		font-weight: 550;
+		@include fSize(1440, 768, 20, 14);
+		line-height: 1em;
+		color: #0C4DA2;
+	}
+	&__text-big{
+		font-family: HelveticaNeueCyr;
+		font-style: normal;
+		font-weight: 550;
+		@include fSize(1440, 768, 16, 13);
+		line-height: 1em;
+
+		text-transform: uppercase;
+		color: #0C4DA2;
+	}
+	&__socials {
+		color: #00B0AD;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 20px;
+		line-height: 23px;
+		&--blue{
+			color: #0C4DA2;
+		}
+	}
+}

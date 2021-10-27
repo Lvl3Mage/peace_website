@@ -1,0 +1,204 @@
+.decor-text__cyan-title-tiny {
+	font-family: HelveticaNeueCyr;
+	font-style: normal;
+	font-weight: bold;
+	font-size: calc((100vw - 910px)/(1440 - 910)*(18 - 13) + 13px);
+	line-height: 1;
+	text-transform: uppercase;
+	color: #00B0AD;
+}
+@media screen and (min-width: 1440px) {
+	.decor-text__cyan-title-tiny {
+		font-size: 18px;
+	}
+}
+@media screen and (max-width: 910px) {
+	.decor-text__cyan-title-tiny {
+		font-size: 13px;
+	}
+}
+.decor-text__text-white {
+	font-family: HelveticaNeueCyr;
+	font-style: normal;
+	font-weight: 550;
+	font-size: 16px;
+	line-height: 16px;
+	color: #FFF;
+}
+.decor-text__blue-title-small {
+	font-family: HelveticaNeueCyr;
+	font-style: normal;
+	font-weight: 550;
+	font-size: 24px;
+	line-height: 24px;
+	color: #0C4DA2;
+}
+@media screen and (max-width: 576px) {
+	.decor-text__blue-title-small {
+		font-size: 18px;
+		line-height: 18px;
+	}
+}
+.decor-text__blue-title-med {
+	font-family: HelveticaNeueCyr;
+	font-style: normal;
+	font-weight: 550;
+	font-size: 30px;
+	line-height: 30px;
+	color: #0C4DA2;
+	text-transform: uppercase;
+}
+.decor-text__blue-title {
+	font-family: HelveticaNeueCyr;
+	font-style: normal;
+	font-weight: bold;
+	font-size: calc((100vw - 910px)/(1500 - 910)*(36 - 18) + 18px);
+	line-height: 1em;
+	text-transform: uppercase;
+	color: #0C4DA2;
+}
+@media screen and (min-width: 1500px) {
+	.decor-text__blue-title {
+		font-size: 36px;
+	}
+}
+@media screen and (max-width: 910px) {
+	.decor-text__blue-title {
+		font-size: 18px;
+	}
+}
+.decor-text__blue-title-big {
+	font-family: HelveticaNeueCyr;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 24px;
+	line-height: 24px;
+	color: #0C4DA2;
+	text-transform: uppercase;
+}
+.decor-text__cyan-title-small {
+	font-family: HelveticaNeueCyr;
+	font-style: normal;
+	font-weight: normal;
+	font-size: calc((100vw - 910px)/(1440 - 910)*(24 - 14) + 14px);
+	line-height: 1em;
+	text-transform: uppercase;
+	color: #00B0AD;
+}
+@media screen and (min-width: 1440px) {
+	.decor-text__cyan-title-small {
+		font-size: 24px;
+	}
+}
+@media screen and (max-width: 910px) {
+	.decor-text__cyan-title-small {
+		font-size: 14px;
+	}
+}
+.decor-text__main-title {
+	text-transform: uppercase;
+	font-family: HelveticaNeueCyr;
+	font-style: normal;
+	font-weight: bold;
+	font-size: calc((100vw - 576px)/(1440 - 576)*(42 - 24) + 24px);
+	line-height: 1em;
+	color: #00B0AD;
+}
+@media screen and (min-width: 1440px) {
+	.decor-text__main-title {
+		font-size: 42px;
+	}
+}
+@media screen and (max-width: 576px) {
+	.decor-text__main-title {
+		font-size: 24px;
+	}
+}
+@media screen and (max-width: 576px) {
+	.decor-text__main-title {
+		font-size: 24px;
+		line-height: 24px;
+	}
+}
+.decor-text__date {
+	font-family: HelveticaNeueCyr;
+	font-style: normal;
+	font-weight: 550;
+	font-size: 16px;
+	line-height: 16px;
+	color: #0C4DA2;
+}
+.decor-text__date--padding {
+	padding-bottom: 7px;
+}
+.decor-text__title {
+	text-transform: uppercase;
+	font-family: HelveticaNeueCyr;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 18px;
+	line-height: 18px;
+	color: #FC9B65;
+}
+.decor-text__title--padding {
+	padding-bottom: 2px;
+}
+.decor-text__text {
+	font-family: HelveticaNeueCyr;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 16px;
+	line-height: 16px;
+	color: #0C4DA2;
+}
+.decor-text__text--padding {
+	padding-bottom: 18px;
+}
+.decor-text__text-med {
+	font-family: HelveticaNeueCyr;
+	font-style: normal;
+	font-weight: normal;
+	font-size: calc((100vw - 768px)/(1440 - 768)*(18 - 14) + 14px);
+	line-height: 1em;
+	color: #0C4DA2;
+}
+@media screen and (min-width: 1440px) {
+	.decor-text__text-med {
+		font-size: 18px;
+	}
+}
+@media screen and (max-width: 768px) {
+	.decor-text__text-med {
+		font-size: 14px;
+	}
+}
+.decor-text__text-big {
+	font-family: HelveticaNeueCyr;
+	font-style: normal;
+	font-weight: 550;
+	font-size: calc((100vw - 768px)/(1440 - 768)*(16 - 13) + 13px);
+	line-height: 1em;
+	text-transform: uppercase;
+	color: #0C4DA2;
+}
+@media screen and (min-width: 1440px) {
+	.decor-text__text-big {
+		font-size: 16px;
+	}
+}
+@media screen and (max-width: 768px) {
+	.decor-text__text-big {
+		font-size: 13px;
+	}
+}
+.decor-text__socials {
+	color: #00B0AD;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 20px;
+	line-height: 23px;
+}
+.decor-text__socials--blue {
+	color: #0C4DA2;
+}
+/*# sourceMappingURL=decor-text.css.map */
