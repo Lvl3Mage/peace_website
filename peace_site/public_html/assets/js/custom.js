@@ -65,7 +65,7 @@ $(document).ready( function () {
 	$(".long-slider").slick({
 		arrows:true,
 		dots:false,
-		infinite: false,
+		infinite: true,
 		slidesToShow: 4,
 		slidesToScroll: 1,
 		responsive: [
