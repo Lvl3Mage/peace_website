@@ -67,6 +67,7 @@
 	padding: 0;
 
 }
+
 .slick-dots-right .slick-dots{
 	justify-content: flex-end;
 	margin-top: 0;
@@ -82,6 +83,9 @@
 	justify-content: center;
 	margin-top: 50px;
 	top: 0;
+}
+.slick-dots-stick-top .slick-dots{
+	margin-top: 0;
 }
 
 .wide-slider .slick-dots li{
