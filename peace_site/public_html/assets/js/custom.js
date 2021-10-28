@@ -109,3 +109,21 @@ $(".calendar__month-wrapper").mouseenter(
 function ToggleCalendarExpansion(calendarElement){
 	$(calendarElement).parents(".slick-list").toggleClass("slick-list--expanded");
 }
+$(document).on('click', '.shortened-text-block>.read-more-button', function(event) {
+	$(this).toggleClass("hidden");
+	$(this).parent().find(".read-less-button").toggleClass("hidden");
+	$(this).parent().find(".additional-text").toggleClass("hidden");
+});
+$(document).on('click', '.shortened-text-block>.read-less-button', function(event) {
+	$(this).toggleClass("hidden");
+	$(this).parent().find(".read-more-button").toggleClass("hidden");
+	$(this).parent().find(".additional-text").toggleClass("hidden");
+});
+$(".map__element>.map__trigger").hover(
+	function(){
+		$(this).parents(".map__element").first().toggleClass("map__element-active");
+	},
+	function(){
+		$(this).parents(".map__element").first().toggleClass("map__element-active");
+	}
+);

@@ -53,6 +53,21 @@ body {
 	width: 100%;
 	height: 100%;
 }
+.hidden{
+	display: none;
+}
+.read-more-button{
+
+}
+.read-more-button:hover{
+	text-decoration: underline;
+}
+.read-less-button{
+	
+}
+.read-less-button:hover{
+	text-decoration: underline;
+}
 .container{
 	box-sizing: border-box;
 	width: 1320px;
@@ -935,10 +950,7 @@ body {
 		flex-grow: 1;
 	}
 	&__connect-button {
-		display: inline-block;
-		padding: 14px 50px;
-		background: #00B0AD;
-		border-radius: 15px;
+
 	}
 	&__image-container{
 		flex: 1 1 55%;
@@ -1111,8 +1123,6 @@ body {
 }
 .support {
 	&__container {
-		margin-top: 60px;
-		margin-bottom: 200px;
 		height: auto;
 		display: flex;
 		min-width: 0;
@@ -1241,7 +1251,122 @@ body {
 	}
 
 }
+.map {
+	&__block-container {
+		margin-bottom: 160px;
+		margin-top: 150px;
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+	}
+	&__title-wrap {
+		flex-grow: 0;
+		width: 100%;
+		position: relative;
+	}
+	&__title {
+	}
+	&__top-wrap {
+		position: absolute;
+		height: 200%;
+		top: -50%;
+		right:0;
+	}
+	&__top {
+		height: 100%;
+		&>img{
+			position: relative;
+			width: auto;
+			height: 100%;
+		}
+	}
+	&__wrap {
+		flex-grow: 1;
+		padding: 10% 30% 0 10%;
+	}
+	&__main-container {
+		position: relative;
+		width: 100%;
+	}
+	&__cyan-container {
+		position: relative;
+		transform-origin: 100% 100%;
+		width: 100%;
+		height: auto;
+		img{
+			width: 100%;
+			height: auto;
+			filter: drop-shadow(1px 1px 0px #00B0AD) drop-shadow(-1px 1px 0px #00B0AD) drop-shadow(1px -1px 0px #00B0AD) drop-shadow(-1px -1px 0px #00B0AD);
+		
+		}
 
+	}
+	&__cyan-trigger {
+		position: absolute;
+		width: 86%;
+		height: 66%;
+		top: -27%;
+		left: 10%;
+		transform-origin: 0% 50%;
+		transform:rotate(45deg);
+	}
+	&__light-blue-container {
+		transform-origin: 0% 100%;
+		right: -37%;
+		left: 76%;
+		top: 40%;
+		position: absolute;
+		img{
+			width: 100%;
+			height: auto;
+		}
+
+	}
+	&__light-blue-trigger {
+		position: absolute;
+		width: 100%;
+		height: 90%;
+		top: 24%;
+		left: 4%;
+		transform-origin: 0% 50%;
+		transform:rotate(-20deg);
+	}
+	&__blue-container {
+		transform-origin: 0% 0%;
+		right: -11.3%;
+    	left: 64.3%;
+    	bottom: -6.5%;
+		position: absolute;
+		img{
+			width: 100%;
+			height: auto;
+		}
+
+		position: absolute;
+	}
+	&__blue-trigger {
+		position: absolute;
+		width: 100%;
+		height: 90%;
+		top: -15%;
+		left: 4%;
+		transform-origin: 0% 50%;
+		transform:rotate(20deg);
+	}
+	&__trigger{
+		z-index: 10;
+	}
+	&__element{
+		//z-index: 0;
+		transform: scale(1.0);
+		transition: all 0.5s;
+	}
+	&__element-active{
+		//z-index: 10;
+		transform: scale(1.2);
+		transition: all 0.5s;
+	}
+}
 .event-main-block {
 	&__container {
 		height: auto;
@@ -1330,6 +1455,7 @@ body {
 		}
 	}
 	&__image-desc{
+
 		position: absolute;
 		width: 100%;
 		height: auto;

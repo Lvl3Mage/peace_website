@@ -167,14 +167,50 @@
 		text-transform: uppercase;
 		color: #0C4DA2;
 	}
-	&__socials {
-		color: #00B0AD;
+}
+.decor-button{
+	&__cyan-big{
+		background: #00B0AD;
+		display: inline-block;
+		padding: 14px 50px;
+		border-radius: 15px;
+	}
+	&__shaded{
+		transition:all 0.2s;
+		&:hover{
+			box-shadow: inset 0px 0px 15px 5px rgba(0,0,0,0.15);
+			transition:all 0.2s;
+		}
+	}
+}
+.decor-icons{
+	&__cyan{
 		font-style: normal;
 		font-weight: normal;
 		font-size: 20px;
 		line-height: 23px;
-		&--blue{
+		&>i{
+			color: #00B0AD;
+			transition:all 0.2s;
+			&:hover{
+				color: #009290;
+				transition:all 0.2s;
+			}
+		}
+		
+	}
+	&__blue{
+		font-style: normal;
+		font-weight: normal;
+		font-size: 20px;
+		line-height: 23px;
+		&>i{
 			color: #0C4DA2;
+			transition:all 0.2s;
+			&:hover{
+				color: #09356e;
+				transition:all 0.2s;
+			}
 		}
 	}
 }
