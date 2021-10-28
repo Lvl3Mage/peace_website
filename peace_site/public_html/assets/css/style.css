@@ -798,6 +798,9 @@ body {
 	width: 100%;
 	height: auto;
 }
+.menu__bottom--margin {
+	margin-bottom: 110px;
+}
 
 @media screen and (max-width: 576px) {
 	.top-bar-menu__buttons {
