@@ -2367,15 +2367,15 @@ body {
 	        filter: drop-shadow(1px 1px 0px #FFF) drop-shadow(-1px 1px 0px #FFF) drop-shadow(1px -1px 0px #FFF) drop-shadow(-1px -1px 0px #FFF);
 }
 .map__blue-container .map__label-container {
-	bottom: 43%;
-	left: 74%;
+	bottom: 80%;
+	left: 26%;
 }
 @media screen and (max-width: 772px) {
 	.map__blue-container .map__label-container {
 		bottom: auto;
 		left: auto;
-		top: calc(100% - 43%);
-		right: calc(100% - 74% - 25px);
+		top: calc(100% - 80%);
+		right: calc(100% - 26% - 25px);
 	}
 }
 .map__blue-trigger {
