@@ -2324,13 +2324,13 @@ body {
 	        filter: drop-shadow(1px 1px 0px #00B0AD) drop-shadow(-1px 1px 0px #00B0AD) drop-shadow(1px -1px 0px #00B0AD) drop-shadow(-1px -1px 0px #00B0AD);
 }
 .map__light-blue-container .map__label-container {
-	bottom: 84%;
-	left: 45%;
+	bottom: 24%;
+	left: 31%;
 }
 @media screen and (max-width: 772px) {
 	.map__light-blue-container .map__label-container {
 		left: auto;
-		right: calc(100% - 45% - 25px);
+		right: calc(100% - 31% - 25px);
 	}
 }
 .map__light-blue-trigger {
